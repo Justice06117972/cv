@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY CV</title>
+    <style>
+        @font-face{
+            font-family: ERAS;
+            src: url(ERASMD.TTF);
+        }
+        *{
+            box-sizing: border-box;
+        }
+        html, body{
+            padding: 0;
+            margin: 0;
+            background-image: url(offset_796908.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            
+
+        }
+        div.loader{
+            width: 230px;
+            height: 230px;
+            background-color: transparent;
+            border: 16px solid lightgrey ;
+            border-style: hidden;
+            margin: 0 auto;
+            margin-top: 10%;
+            border-radius: 50%;
+            border-right: 16px solid black;
+            -o-animation: load 3s linear infinite;
+            -webkit-animation: load 3s linear infinite;
+            -moz-animation: load 3s linear infinite;
+            animation: load 3s linear infinite;
+            text-align: center;
+            transition: 2s all;
+        }
+        @-o-keyframes load{
+            0%{transform: rotate(0deg);}
+            100%{transform: rotate(-360deg);}
+        }
+        @-moz-keyframes load{
+            0%{transform: rotate(0deg);}
+            100%{transform: rotate(-360deg);}
+        }
+        @-webkit-keyframes load{
+            0%{transform: rotate(0deg);}
+            100%{transform: rotate(-360deg);}
+        }
+        @keyframes load{
+            0%{transform: rotate(0deg);}
+            100%{transform: rotate(-360deg);}
+        }
+        div.load-txt{
+            text-align: center;
+            font-size: xx-large;
+            font-weight: 700;
+            font-family: Calibri;
+            color: black;
+            display: flex;
+            margin: 0 auto;
+            width: 150px;
+            border: 0;
+            transition: 2s all;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+        div.cv{
+            display: none;
+            opacity: 0;
+            transition: 1s all;
+            height: 297mm;
+            width: 210mm;
+            background-color: whitesmoke;
+            margin: 0 auto;
+            box-shadow: -10px -3px 10px 1px rgba(0, 0, 0, 0.102);
+            border-right: 1px solid black;
+            
+        }
+        div.cv-1{
+            background-color: rgb(10, 10, 68);
+            width: 33%;
+            padding: 0%;
+            margin: 0%;
+            height: 297mm;
+
+        }
+        div.cv-2{
+            background-color: rgb(255, 255, 255);
+            width: 67%;
+            padding: 0%;
+            margin: 0%;
+            height: 297mm;  
+        }
+         div.cv-container{
+            display: flex;
+            height: 297mm;
+        }
+        
+
+        div.cv-1 div.cv-1-img  img{
+            border-radius: 50%;
+            margin: 0 auto;
+            border: 2.3px solid white;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        div.cv-1 div.cv-1-img{
+             padding: 20px;
+             border: 0;
+        }
+        div.cv-1-contact{
+            display: grid;
+            border: 0;
+            text-align: center;
+            color: white;
+        }
+        div.cnt{
+            background-color: transparent;
+            height: 100px;
+            line-height: 90px;
+        }
+        div.cnt span{
+            text-decoration: none;
+            background-color: transparent;
+            padding: 2px;
+            font-size: xx-large;
+            border-bottom: 1px solid white;
+            font-family: Calibri;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        div.rd{
+            display: flex;
+            word-wrap: break-word;
+            padding: 10px;
+            background-color: transparent;
+            color: white;
+            margin: 1px;
+            font-family: Calibri;
+            font-weight: 400;
+            font-size: medium;
+        }
+        div.tel{
+            display: flex;
+            word-wrap: break-word;
+            padding: 10px;
+            background-color: transparent;
+            color: white;
+            margin: 1px;
+            font-family: Calibri;
+            font-weight: 400;
+            font-size: medium;
+
+        }
+        div.mail{
+            display: flex;
+            word-wrap: break-word;
+            padding: 10px;
+            background-color: transparent;
+            color: white;
+            margin: 1px;
+            font-family: Calibri;
+            font-weight: 400;
+            font-size: medium;
+
+        }
+        div.cv-1-education{
+            height: fit-content;
+            padding: 10px;
+        }
+        div.edu{
+            height: 100px;
+            line-height: 90px;
+            text-align: center;
+            color:white;
+        }
+        div.edu span{
+            text-decoration: none;
+            background-color: transparent;
+            padding: 2px;
+            font-size: xx-large;
+            border-bottom: 1px solid white;
+            font-family: Calibri;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        div.edu-1{
+            word-wrap: break-word;
+            padding: 10px;
+            background-color: transparent;
+            color: white;
+            margin: 1px;
+            font-family: Calibri;
+            font-weight: 400;
+            font-size: medium;
+            text-align: center;
+        }
+        div.ref{
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            color:white;
+        }
+        div.ref span{
+            text-decoration: none;
+            background-color: transparent;
+            padding: 2px;
+            font-size: xx-large;
+            border-bottom: 1px solid white;
+            font-family: Calibri;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        div.ref-1{
+            word-wrap: break-word;
+            padding: 10px;
+            background-color: transparent;
+            color: white;
+            margin: 1px;
+            font-family: Calibri;
+            font-weight: 400;
+            font-size: medium;
+            text-align: center;
+        }
+        div.ref-2{
+            word-wrap: break-word;
+            padding: 10px;
+            background-color: transparent;
+            color: white;
+            margin: 1px;
+            font-family: Calibri;
+            font-weight: 400;
+            font-size: medium;
+            text-align: center;
+        }
+        div.cv-name{
+            width: 98%;
+            float: right;
+            background-color: rgba(211, 211, 211, 0.671);
+        }
+        hr{
+            border: 1px solid black;
+            border-radius: 0;
+            width: 33%;
+        }
+        div.cv-pro{
+            width: 96%;
+            background-color: white;
+            color: black;
+            float: right;
+            padding: 17px;
+        }
+        div.cv-pro span{
+            text-decoration: none;
+            background-color: transparent;
+            padding: 2px;
+            font-size: xx-large;
+            border-bottom: 1px solid black;
+            font-family: Calibri;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        div.cv-exp{
+            width: 96%;
+            background-color: white;
+            color: black;
+            float: right;
+            padding: 17px;
+        }
+        div.cv-exp-1 span{
+            text-decoration: none;
+            background-color: transparent;
+            padding: 2px;
+            font-size: xx-large;
+            border-bottom: 1px solid black;
+            font-family: Calibri;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        div.cv-skill{
+            width: 96%;
+            background-color: white;
+            color: black;
+            float: right;
+            padding: 17px;
+            display: grid;
+        }
+        div.cv-skill div.cv-skill-1 span{
+            text-decoration: none;
+            background-color: transparent;
+            padding: 2px;
+            font-size: xx-large;
+            border-bottom: 1px solid black;
+            font-family: Calibri;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div id="loader" class="loader" onload="load()"></div>
+    <div class="load-txt" onload="loadTxt()" id="loadtxt">
+    <span id="1" style="display: none;">l</span>
+    <span id="2" style="display: none;">o</span>
+    <span id="3" style="display: none;">a</span>
+    <span id="4" style="display: none;">d</span>
+    <span id="5" style="display: none;">i</span>
+    <span id="6" style="display: none;">n</span>
+    <span id="7" style="display: none;">g</span>
+    <span id="8" style="display: none;">.</span>
+    <span id="9" style="display: none;">.</span>
+    <span id="10" style="display: none;">.</span>
+    </div>
+<br>
+<div class="cv" id="cv">
+    <!--=========[@CV_COINTAINER]==================-->
+
+    <!---------[$_START CV PROJECT]-------------------------------------------->
+
+    <div class="cv-container">
+        <div class="cv-1">
+
+
+<!--------------[CV_PROFILE PIC]---------------->
+            <div class="cv-1-img"><img src="Snapchat-377737042.jpg" alt="img-missing" width="200" height="160"/>
+            </div>
+
+<!---------------[CV_CONTACT]------->  
+
+            <div class="cv-1-contact">
+            <div class="cnt"><span>contact</span></div>
+            <div class="rd"><div><img src="hiclipart.com (1).png" alt="M" width="30" height="35"></div><div>&nbsp;<span>#House 1, Road 1/17 Federa Housing Estate, Woji Port Harcourt</span></div></div>
+            <div class="tel"><div><img src="PngItem_5111617.png" alt="M" width="30" height="30"></div>&nbsp;<div>+2347033326548</div></div>
+            <div class="mail"><div><img src="hiclipart.com.png" alt="M" width="30" height="30"></div>&nbsp;<span>anisijijustice2001@gmail.com</span></div>
+            <div class="mail"><div><img src="hiclipart.com.png" alt="M" width="30" height="30"></div>&nbsp;<span>anisijijideofo2001@gmail.com</span></div>
+            </div>
+            <!----------[CV_EDUCATION]------------------------>
+
+            <div class="cv-1-education">
+                <div class="edu"><span>education</span></div>
+                <div class="edu-1"><p>Master's in MCS</p><p style="font-weight: 100; margin: 0;">Jan 2017- Dec 2020</p> <span style="font-weight: 100; font-style: italic; font-size: medium;"> University of Oxford - UK</span><div>
+                <div class="edu-2"><p>Bachelor in BCS</p><p style="font-weight: 100; margin: 0;">Jan 2017 - Dec 2020</p> <span style="font-weight: 100; font-style: italic; font-size: medium;"> University of Sussex - UK</span></div>
+            </div>
+
+<!---------[CV_REFRENCES]-------------------------------------------->     
+                  <div class="ref"><span>refrences</span></div>
+                  <div class="ref-1"><p style="text-transform: uppercase; margin: 0;">mr.emmanuel anisiji</p><span style="font-size: medium; font-weight: 100;">Cheif Engineer,MIN Technologies</span></div>
+                  <div class="ref-2"><p style="font-weight: 100; margin: 0; padding: 5px;">Email:&nbsp;firstorentchemicalcompany@gmail.com</p><p style="font-weight: 100; margin: 0; padding: 5px;">Mobile:&nbsp;+2348033406162</p></div>  
+
+
+</div>
+</div>
+</div>
+        <!-------[@END_CV_1]-->
+        <div class="cv-2">
+<!-----------------[CV_NAME]--------------->
+        <div class="cv-name">
+            <div style="font-size: 40px; text-align: center; color: black; text-transform: uppercase; padding: 20px; font-family: 'ERAS'; margin-top:30px;">anisiji justice</div>
+            <hr>
+            <div style="text-transform: uppercase; font-size: x-large; text-align: center;font-family: calibri;padding: 10px;">web developer</div>
+        </div>
+<!--------------------------------------[CV_PROFILE]----------------------------------------->
+<div class="cv-pro">
+    <div class="cv-pro-1"><span>profile</span></div>
+    <div style="color: black;font-family: Calibri;text-align: left;background-color: white;margin-top: 10px;
+    letter-spacing: 0.2px; font-weight: 400;font-size: large;">I'm from Anambera State, Aguata Local Government Area. I was born on the 2nd of December 2001 in Rivers State. I'm a WEB DEVELOPER from Nigeria, Rivers State and am currently living in Port-Harcourt. I love building websites for businesses and rich interface web apps. If you are a business man or woman seeking for a web presence or an imployer looking to hire, you can get in touch with me through the contact or refrence i provided. Thank you and god bless you.
+         </div>
+        </div>
+<!-----------------------[CV_EXPERIENCE]------------------------------->
+<div class="cv-exp">
+    <div class="cv-exp-1"><span>work experience</span></div>
+     <div style="color: black;font-family: Calibri;text-align: left;background-color: white;margin-top: 10px;
+     letter-spacing: 0.2px; font-weight: 400;font-size: large;display: flex;">
+        <div style="width: 50%;">
+            <p style="padding: 0;margin: 0;text-transform: uppercase; font-family: ERAS;">senior manager</p>
+            <p style="padding: 0;margin: 0;text-transform: capitalize; color: rgb(160, 155, 155);font-style: italic;">Free company,UK - British</p>
+        </div>
+        <div style="text-align: right;width: 50%;">
+            <p style="font-family: calibri;text-transform: uppercase;line-height: normal;color: rgb(168, 164, 164);">jan 2017 - dec 2020</p>
+        </div>
+</div>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia consequatur quibusdam ab quae quos quam maiores iure eum nihil doloremque beatae fugiat, possimus eligendi porro nam ex perspiciatis error inventore!</p>
+    
+<!--------------------------------------------------------------------------------------------------->
+<div style="color: black;font-family: Calibri;text-align: left;background-color: white;margin-top: 10px;
+letter-spacing: 0.2px; font-weight: 400;font-size: large;display: flex;">
+   <div style="width: 50%;">
+       <p style="padding: 0;margin: 0;text-transform: uppercase; font-family: ERAS;">senior manager</p>
+       <p style="padding: 0;margin: 0;text-transform: capitalize; color: rgb(160, 155, 155);font-style: italic;">Free company,UK - British</p>
+   </div>
+   <div style="text-align: right;width: 50%;">
+       <p style="font-family: calibri;text-transform: uppercase;line-height: normal;color: rgb(168, 164, 164);">jan 2017 - dec 2020</p>
+   </div>
+</div>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, debitis numquam, iure corrupti a totam magnam temporibus quidem eligendi velit assumenda nihil molestiae dicta accusamus natus modi, unde dolor illo!</p>
+        </div>
+<!----------------------------------[CV_SKILL]------------------------------------------------------------->
+<div class="cv-skill">
+    <div class="cv-skill-1"><span>skill</span></div>
+    <div>
+        <table style="border: 0;margin-top: 8px; width: 100%;">
+            
+                
+        
+            <tbody style="font-weight: 400;font-size: medium;border-collapse: collapse;">
+                <tr>
+                    <td style="padding-top: 10px;line-height: normal;font-size: large;font-family: Calibri;text-transform: capitalize;font-weight: 300;text-shadow: 0.3px 0.3px lightgray;text-align: left;">full stack web developer</td>
+                    <td style="padding-top: 10px;line-height: normal;font-size: large;font-family: Calibri;text-transform: capitalize;font-weight: 300;text-shadow: 0.3px 0.3px lightgray;text-align: left;">app developer</td>
+                </tr>
+
+                <tr>
+                    <td style="padding-top: 10px;line-height: normal;font-size: large;font-family: Calibri;text-transform: capitalize;font-weight: 300;text-shadow: 0.3px 0.3px lightgray;text-align: left;">game development</td>
+                    <td style="padding-top: 10px;line-height: normal;font-size: large;font-family: Calibri;text-transform: capitalize;font-weight: 300;text-shadow: 0.3px 0.3px lightgray;text-align: left;">animation</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+        
+</div>
+</div>
+
+<br>
+
+<script>
+    var myTimeout = setTimeout( function loadTxt() {
+       document.getElementById("1").style.display = "block";
+    }, 1000);
+    var myTimeout = setTimeout( function loadTxt() {
+       document.getElementById("2").style.display = "block";
+    }, 1200);
+    var myTimeout = setTimeout( function loadTxt() {
+       document.getElementById("3").style.display = "block";
+    }, 1400);
+    var myTimeout = setTimeout( function loadTxt() {
+       document.getElementById("4").style.display = "block";
+    }, 1600);
+    var myTimeout = setTimeout( function loadTxt() {
+       document.getElementById("5").style.display = "block";
+    }, 1800);
+    var myTimeout = setTimeout( function loadTxt() {
+       document.getElementById("6").style.display = "block";
+    }, 2000);
+    var myTimeout = setTimeout( function loadTxt() {
+       document.getElementById("7").style.display = "block";
+    }, 2200);
+    var myTimeout = setTimeout( function loadTxt() {
+       document.getElementById("8").style.display = "block";
+    }, 2400);
+    var myTimeout = setTimeout( function loadTxt() {
+       document.getElementById("9").style.display = "block";
+    }, 2700);
+    var myTimeout = setTimeout( function loadTxt() {
+       document.getElementById("10").style.display = "block";
+    }, 3000);
+    var myTimeout = setTimeout( function loadTxt() {
+       document.getElementById("loadtxt").style.display = "none";
+       document.getElementById("loader").style.display = "none";
+       document.getElementById("cv").style.display = "block";
+       document.getElementById("cv").style.opacity = "1";
+    }, 5000);
+    
+</script>
+</div>
+</body>
+</html>
