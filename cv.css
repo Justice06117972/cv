@@ -1,0 +1,306 @@
+@font-face {
+  font-family: ERAS;
+  src: url(ERASMD.TTF);
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-image: url(offset_796908.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+div.loader {
+  width: 230px;
+  height: 230px;
+  background-color: transparent;
+  border: 16px solid lightgrey;
+  border-style: hidden;
+  margin: 0 auto;
+  margin-top: 10%;
+  border-radius: 50%;
+  border-right: 16px solid black;
+  -o-animation: load 3s linear infinite;
+  -webkit-animation: load 3s linear infinite;
+  -moz-animation: load 3s linear infinite;
+  animation: load 3s linear infinite;
+  text-align: center;
+  transition: 2s all;
+}
+@-o-keyframes load {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@-moz-keyframes load {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@-webkit-keyframes load {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes load {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+div.load-txt {
+  text-align: center;
+  font-size: xx-large;
+  font-weight: 700;
+  font-family: Calibri;
+  color: black;
+  display: flex;
+  margin: 0 auto;
+  width: 150px;
+  border: 0;
+  transition: 2s all;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+div.cv {
+  display: none;
+  opacity: 0;
+  transition: 1s all;
+  height: 297mm;
+  width: 210mm;
+  background-color: whitesmoke;
+  margin: 0 auto;
+  box-shadow: -10px -3px 10px 1px rgba(0, 0, 0, 0.102);
+  border-right: 1px solid black;
+}
+div.cv-1 {
+  background-color: rgb(10, 10, 68);
+  width: 33%;
+  padding: 0%;
+  margin: 0%;
+  height: 297mm;
+}
+div.cv-2 {
+  background-color: rgb(255, 255, 255);
+  width: 67%;
+  padding: 0%;
+  margin: 0%;
+  height: 297mm;
+}
+div.cv-container {
+  display: flex;
+  height: 297mm;
+}
+
+div.cv-1 div.cv-1-img img {
+  border-radius: 50%;
+  margin: 0 auto;
+  border: 2.3px solid white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+div.cv-1 div.cv-1-img {
+  padding: 20px;
+  border: 0;
+}
+div.cv-1-contact {
+  display: grid;
+  border: 0;
+  text-align: center;
+  color: white;
+}
+div.cnt {
+  background-color: transparent;
+  height: 100px;
+  line-height: 90px;
+}
+div.cnt span {
+  text-decoration: none;
+  background-color: transparent;
+  padding: 2px;
+  font-size: xx-large;
+  border-bottom: 1px solid white;
+  font-family: Calibri;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+div.rd {
+  display: flex;
+  word-wrap: break-word;
+  padding: 10px;
+  background-color: transparent;
+  color: white;
+  margin: 1px;
+  font-family: Calibri;
+  font-weight: 400;
+  font-size: medium;
+}
+div.tel {
+  display: flex;
+  word-wrap: break-word;
+  padding: 10px;
+  background-color: transparent;
+  color: white;
+  margin: 1px;
+  font-family: Calibri;
+  font-weight: 400;
+  font-size: medium;
+}
+div.mail {
+  display: flex;
+  word-wrap: break-word;
+  padding: 10px;
+  background-color: transparent;
+  color: white;
+  margin: 1px;
+  font-family: Calibri;
+  font-weight: 400;
+  font-size: medium;
+}
+div.cv-1-education {
+  height: fit-content;
+  padding: 10px;
+}
+div.edu {
+  height: 100px;
+  line-height: 90px;
+  text-align: center;
+  color: white;
+}
+div.edu span {
+  text-decoration: none;
+  background-color: transparent;
+  padding: 2px;
+  font-size: xx-large;
+  border-bottom: 1px solid white;
+  font-family: Calibri;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+div.edu-1 {
+  word-wrap: break-word;
+  padding: 10px;
+  background-color: transparent;
+  color: white;
+  margin: 1px;
+  font-family: Calibri;
+  font-weight: 400;
+  font-size: medium;
+  text-align: center;
+}
+div.ref {
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  color: white;
+}
+div.ref span {
+  text-decoration: none;
+  background-color: transparent;
+  padding: 2px;
+  font-size: xx-large;
+  border-bottom: 1px solid white;
+  font-family: Calibri;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+div.ref-1 {
+  word-wrap: break-word;
+  padding: 10px;
+  background-color: transparent;
+  color: white;
+  margin: 1px;
+  font-family: Calibri;
+  font-weight: 400;
+  font-size: medium;
+  text-align: center;
+}
+div.ref-2 {
+  word-wrap: break-word;
+  padding: 10px;
+  background-color: transparent;
+  color: white;
+  margin: 1px;
+  font-family: Calibri;
+  font-weight: 400;
+  font-size: medium;
+  text-align: center;
+}
+div.cv-name {
+  width: 98%;
+  float: right;
+  background-color: rgba(211, 211, 211, 0.671);
+}
+hr {
+  border: 1px solid black;
+  border-radius: 0;
+  width: 33%;
+}
+div.cv-pro {
+  width: 96%;
+  background-color: white;
+  color: black;
+  float: right;
+  padding: 17px;
+}
+div.cv-pro span {
+  text-decoration: none;
+  background-color: transparent;
+  padding: 2px;
+  font-size: xx-large;
+  border-bottom: 1px solid black;
+  font-family: Calibri;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+div.cv-exp {
+  width: 96%;
+  background-color: white;
+  color: black;
+  float: right;
+  padding: 17px;
+}
+div.cv-exp-1 span {
+  text-decoration: none;
+  background-color: transparent;
+  padding: 2px;
+  font-size: xx-large;
+  border-bottom: 1px solid black;
+  font-family: Calibri;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+div.cv-skill {
+  width: 96%;
+  background-color: white;
+  color: black;
+  float: right;
+  padding: 17px;
+  display: grid;
+}
+div.cv-skill div.cv-skill-1 span {
+  text-decoration: none;
+  background-color: transparent;
+  padding: 2px;
+  font-size: xx-large;
+  border-bottom: 1px solid black;
+  font-family: Calibri;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
